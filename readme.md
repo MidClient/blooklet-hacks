@@ -1,22 +1,16 @@
-# Gold Quest Cheats
+# Santa's Workshop Cheats
 
-## [Always Triple](alwaysTriple.js)
-Always get triple gold
+## [Remove Distractions](removeDistractions.js)
+Removes all enemy distractions
 
-## [Auto Choose](autoChoose.js)
-Automatically picks the best chest
+## [Send Distraction](sendDistraction.js)
+Sends a distraction to everyone else playing
 
-## [Chest ESP](chestESP.js)
-Shows what each chest will give you
+## [Set Toys](setToys.js)
+Sets amount of toys
 
-## [Reset Player's Gold](resetPlayersGold.js)
-Sets a player's gold to 0
+## [Set Toys Per Question](setToysPerQ.js)
+Sets amount of toys per question
 
-## [Reset All Gold](resetAllGold.js)
-Set's everyone else's gold to 0
-
-## [Set Gold](setGold.js)
-Sets amount of gold
-
-## [Swap Gold](swapGold.js)
-Brings up the player select page to swap with someone
+## [Swap Toys](swapToys.js)
+Swaps toys with someone
