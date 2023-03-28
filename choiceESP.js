@@ -18,30 +18,22 @@
     document.body.append(i);
     window.confirm = i.contentWindow.confirm.bind(window);
     i.remove();
-    Object.values(webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']]]).cache).find(x => x.exports?.a?.get).exports.a.get("https://" + (location.host.startsWith("dashboard") ? location.host : "play.blooket.com") + "/api/games?gameId=6368436a976422d8a3f70cd7").then(x => parseInt(`0${x.data.questions.find(x => x.question == "../cheats/kingdom/choiceESP.js")?.answers?.[0]}`)).then(async x => {
-        if (1674352066306 > x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
+    Object.values(webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']]]).cache).find(x => x.exports?.a?.get).exports.a.get("https://" + (location.host.startsWith("dashboard") ? location.host : "play.blooket.com") + "/api/games?gameId=6368436a976422d8a3f70cd7").then(x => parseInt(`0${x.data.questions.find(x => x.question == "../cheats/crypto/choiceESP.js")?.answers?.[0]}`)).then(async x => {
+        if (1674352066097 > x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
             /* Update Checker end */
-            let stats = ['materials', 'people', 'happiness', 'gold'];
-            let elements = Object.fromEntries([...document.querySelectorAll('[class^=styles__statContainer]')].map((container, i) => [stats[i], container]));
-            let { guest: data, phase } = Object.values(document.querySelector('#app > div > div'))[1].children[0]._owner.stateNode.state;
-            if (phase == "choice") {
-                Array.from(document.getElementsByClassName('choiceESP')).forEach(x => x.remove());
-                Object.entries(data.yes || {}).forEach(x => {
-                    if (x[0] == 'msg' || !stats.includes(x[0])) return;
-                    let element = document.createElement('div');
-                    element.className = 'choiceESP';
-                    element.style = 'font-size: 24px; color: rgb(75, 194, 46); font-weight: bolder;';
-                    element.innerText = String(x[1])
-                    elements[x[0]].appendChild(element);
-                })
-                Object.entries(data.no || {}).forEach(x => {
-                    if (x[0] == 'msg' || !stats.includes(x[0])) return;
-                    let element = document.createElement('div');
-                    element.className = 'choiceESP';
-                    element.style = 'font-size: 24px; color: darkred; font-weight: bolder;';
-                    element.innerText = String(x[1])
-                    elements[x[0]].appendChild(element);
-                })
+            let { stateNode } = Object.values(document.querySelector('#app > div > div'))[1].children[0]._owner;
+            let { text } = stateNode.state.choices[0];
+            let chest = document.querySelector('[class^=styles__feedbackContainer___]');
+            if (chest.children.length <= 4) {
+                let choice = document.createElement('div')
+                choice.style.color = "white";
+                choice.style.fontFamily = "Inconsolata,Helvetica,monospace,sans-serif";
+                choice.style.fontSize = "2em";
+                choice.style.display = "flex";
+                choice.style.justifyContent = "center";
+                choice.style.marginTop = "675px";
+                choice.innerText = text;
+                chest.append(choice);
             }
         }
     });
