@@ -1,18 +1,19 @@
-# Crazy Kingdom Cheats
+# Cafe Cheats
 
-## [Choice ESP](choiceESP.js)
-Shows you what will happen if you say Yes or No
-## [Choice ESP Loop](choiceESPLoop.js)
-Choice ESP but it infinitely loops
+## [Max Items](maxItems.js)
+Maxes out items in the shop[^1]
 
-## [Disable Toucan](disableToucan.js)
-Never pay taxes
+## [Remove Customers](removeCustomers.js)
+Skips the current customers[^2]
 
-## [Max Stats](maxStats.js)
-Sets all resources to the max
+## [Reset Abilities](resetAbilities.js)
+Resets the used abilities in the shop[^1]
 
-## [Set Guests](setGuests.js)
-Sets the amount of guests you've seen
+## [Set Cash](setCash.js)
+Sets cafe cash
 
-## [Skip Guest](skipGuest.js)
-Skips the current guest
+## [Stock Food](stockFood.js)
+Stocks all food to 99[^2]
+
+[^1]: Only usable in the shop
+[^2]: Not usable in the shop
