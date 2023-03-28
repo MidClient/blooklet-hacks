@@ -1,15 +1,21 @@
-# Deceptive Dino Cheats
+# Factory Cheats
 
-## [Auto Choose](autoChoose.js)
-Automatically choose the best fossil when excavating
-## [Rock ESP](rockESP.js)
-Shows what each rock will give you
+## [Choose Blook](chooseBlook.js)
+Gives you a blook
+## [Free Upgrades](freeUpgrades.js)
+Sets upgrade prices to 0 for all current blooks
 
-## [Set Fossils](setFossils.js)
-Sets the amount of fossils you have
+## [Max Blooks](maxBlooks.js)
+Maxes out all your blooks' levels
 
-## [Set Multiplier](setMultiplier.js)
-Sets fossil multiplier
+## [Remove Glitches](removeGlitches.js)
+Removes all enemy glitches
 
-## [Stop Cheating](stopCheating.js)
-Undoes cheating so that you can't be caught
+## [Send Glitch](sendGlitch.js)
+Sends a random glitch
+
+## [Set All Mega Bot](setAllMegaBot.js)
+Sets all your blooks to maxed out Mega Bots
+
+## [Set Cash](setCash.js)
+Sets amount of cash you have
