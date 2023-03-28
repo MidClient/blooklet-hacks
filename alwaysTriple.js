@@ -18,10 +18,16 @@
     document.body.append(i);
     window.confirm = i.contentWindow.confirm.bind(window);
     i.remove();
-    Object.values(webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']]]).cache).find(x => x.exports?.a?.get).exports.a.get("https://" + (location.host.startsWith("dashboard") ? location.host : "play.blooket.com") + "/api/games?gameId=6368436a976422d8a3f70cd7").then(x => parseInt(`0${x.data.questions.find(x => x.question == "../cheats/crypto/alwaysTriple.js")?.answers?.[0]}`)).then(async x => {
-        if (1674352066091 > x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
+    Object.values(webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']]]).cache).find(x => x.exports?.a?.get).exports.a.get("https://" + (location.host.startsWith("dashboard") ? location.host : "play.blooket.com") + "/api/games?gameId=6368436a976422d8a3f70cd7").then(x => parseInt(`0${x.data.questions.find(x => x.question == "../cheats/gold/alwaysTriple.js")?.answers?.[0]}`)).then(async x => {
+        if (1675378722491 > x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
             /* Update Checker end */
-            setInterval(() => Object.values(document.querySelector('#app > div > div'))[1].children[0]._owner.stateNode.setState({ choices: [{ type: "mult", val: 3, rate: .075, blook: "Brainy Bot", text: "Triple Crypto" }] }), 25);
+            let { stateNode } = Object.values(document.querySelector('#app > div > div'))[1].children[0]._owner;
+            stateNode.state.gold == 0 && stateNode.setState({ gold: 100, gold2: 100 });
+            stateNode._choosePrize ||= stateNode.choosePrize;
+            stateNode.choosePrize = function (i) {
+                stateNode.state.choices[i] = { type: "multiply", val: 3, text: "Triple Gold!", blook: "Unicorn" };
+                stateNode._choosePrize(i);
+            }
         }
     });
 })();
